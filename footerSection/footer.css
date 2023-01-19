@@ -1,0 +1,230 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.below-h2 {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+h2 {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+}
+#button:hover {
+  background-color: #4E6D58;
+  color: white;
+}
+#mail {
+  color: white;
+  background-color: #313F35;
+  font: 400 16px Open Sans, sans-serif;
+  padding: 12px 15px;
+  width: 200px;
+  border-radius: 0px;
+  font-weight: 520;
+  border: 2px solid #fff;
+  display: inline-flex;
+}
+
+#button {
+  font: 700 14px/120% Open Sans, sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 0px;
+  padding: 12px 30px;
+  cursor: pointer;
+  touch-action: manipulation;
+  text-align: center;
+  transition: all 0.3s ease 0s;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  color: #4E6D58;
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  
+  max-width: 100%;
+  display: inline-flex;
+}
+#button:before {
+  background-position: -70px -190px;
+  content: "";
+  display: inline-block;
+  position: relative;
+  vertical-align: bottom;
+  margin-right: 8px;
+}
+#middel {
+  display: flex;
+  width: 100%;
+  background: #313F35;
+  box-sizing: border-box;
+  justify-content: space-around;
+  margin: auto;
+
+  padding-bottom: 30px;
+}
+#middel > div {
+  background: #313F35;
+  width: 17%;
+  padding: 8px;
+  line-height: 30px;
+  padding-left: 0px;
+}
+#middel > div h2 {
+  color: #313F35;
+  color: white;
+  font: 600 18px Open Sans, sans-serif;
+}
+a {
+  text-decoration: none;
+  color: white;
+  font: 400 14px Open Sans, sans-serif;
+  cursor: pointer;
+}
+.innerh2 {
+  margin-top: 20px;
+}
+li {
+  list-style: none;
+}
+a:hover {
+  border-bottom: 2px solid white;
+}
+#para {
+  
+  color: white;
+ 
+  background: #313F35;
+  width: 100%;
+  margin-top: 10px;
+}
+#para > h2 {
+  font: 600 18px Open Sans, sans-serif;
+}
+
+#para > button {
+  font: 700 14px/120% Open Sans, sans-serif;
+  text-transform: uppercase;
+  border-radius: 0px;
+  padding: 12px 24px;
+  cursor: pointer;
+  touch-action: manipulation;
+  text-align: center;
+  transition: all 0.3s ease 0s;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  color: #313F35;
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  margin-bottom: 0;
+}
+#para > button:hover {
+  background-color: white;
+  color: #313F35;
+}
+#foot > div:last-child {
+display: inline-flex;
+  box-sizing: border-box;
+  padding: 16px 32px;
+  background: #313F35;
+
+  font: 400 14px Open Sans, sans-serif;
+  width: 100%;
+  margin: auto;
+  border: 2px solid #3b493f;
+  height: 50px;
+  color: #fff;
+  justify-content: space-evenly;
+  
+}
+.social-icon {
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.social-icon i {
+  margin-right: 7px;
+}
+@media all and (min-width: 320px) and (max-width: 650px) {
+  #middel {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px;
+  }
+  #middel > div {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  #mail {
+    width: auto;
+    padding: auto;
+  }
+  #button {
+    width: auto;
+  }
+  #para {
+    width: 90%;
+  }
+}
+
+@media all and (min-width: 320px) and (max-width: 622px) {
+  #middel {
+    margin-top: 40px;
+  }
+  #para {
+    width: 90%;
+  }
+}
+
+@media all and (min-width: 320px) and (max-width: 530px) {
+  #middel {
+    margin-top: 75px;
+  }
+  #button {
+    margin-top: 10px;
+    margin-left: 0px;
+    max-width: 100%;
+  }
+  #para {
+    width: 90%;
+  }
+}
+
+@media all and (min-width: 320px) and (max-width: 414px) {
+  #mail {
+    width: 91%;
+  }
+  #button {
+    margin-top: 10px;
+    margin-left: 0px;
+    max-width: 100%;
+    width: 100%;
+  }
+  #middel {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 20px;
+  }
+  #middel > div {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  #para {
+    width: 90%;
+  }
+}
