@@ -76,7 +76,8 @@ h2 {
   width: 17%;
   padding: 8px;
   line-height: 30px;
-  padding-left: 0px;
+  padding-left: 10px;
+  padding-top: 30px;
 }
 #middel > div h2 {
   color: #313F35;
