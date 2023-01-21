@@ -9,7 +9,9 @@
    
   </head>
   <body>
-    <div >
+    <div><h3 id="alert"></h3></div>
+    <div id="container" >
+      
       <div class="nav">
         <!-- Use this Select Tag for Filtering the Products  -->
       <select id="filter">
@@ -19,12 +21,22 @@
         <option value="Electronics">Electronics</option>
         <option value="Others">Others</option>
       </select>
-      <h1 id="alert"></h1>
+      <div id="range">
+        <h3>Filter By Price Range</h3>
+        <input type="number" id="lower" placeholder="From"/>
+        <input type="number" id="upper" placeholder="To" />
+        <button id="filter-btn">Filter</button>
+      </div>
+      <br>
+      
+    
+      </div>
+      
       <div id="product-container">
         
+       <!-- Here Append All the Products  --> 
       </div>
-      </div>
-      <!-- Here Append All the Products  -->
+      
     </div>
   </body>
   <script src="product-list.js"></script>
