@@ -338,3 +338,39 @@ p{
       #sale{
         color: #D32F4A;
       }
+
+
+      @media all and (min-width: 320px) and (max-width: 650px) {
+        .nav-links{
+       width: 80%;
+        display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px;
+      }}
+      @media all and (min-width: 320px) and (max-width: 622px) {
+  
+        .nav-links{
+            width: 80%;
+        display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px;
+      }
+    }
+    @media all and (min-width: 320px) and (max-width: 530px) {
+ 
+        .nav-links{
+            width: 80%;
+        display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px;
+      }
+    }
+    @media all and (min-width: 320px) and (max-width: 414px) {
+ 
+        .nav-links{
+        width: 80%;
+        display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px;
+      }
+    }
