@@ -49,11 +49,11 @@ function DisplayProduct(data){
           details.textContent=product.description
         add_to_cart.addEventListener("click",()=>{
             if(checkDuplicate(product)){
-                document.getElementById("alert").innerHTML ="Product Already in Cart"
+                document.getElementById("alert").innerHTML ="Product Already in Cart "
             }else{
               CartArr.push({...product,quantity:1})
               localStorage.setItem("cart",JSON.stringify(CartArr))
-              alert("Product Added To Cart")
+              document.getElementById("alert").innerHTML ="Product Added To Cart"
 
             }
         })
