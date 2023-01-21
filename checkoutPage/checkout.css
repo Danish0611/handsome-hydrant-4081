@@ -27,10 +27,11 @@ body {
   color: #1f1f1f;
   font: 400 16px Open Sans, sans-serif;
   line-height: 1.35;
-  padding: 8px 12px;
+  padding: 20px 12px;
   background: #EDF0EE;
   border: 2px solid #ddd;
   border-radius: 4px;
+  
 }
 .form-class input {
   width: 90%;
