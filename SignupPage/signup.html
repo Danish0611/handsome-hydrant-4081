@@ -9,15 +9,15 @@
       href=""
       type="image/x-icon"
     />
-    <title>EMS Sign-In</title>
+    <title>EMS Registration</title>
+    <link rel="stylesheet" href="../headerSection/header.css">
+    <link rel="stylesheet" href="signup.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../footerSection/footer.css">
     <script
       src="https://kit.fontawesome.com/55e19b9ba4.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="../footerSection/footer.css">
-    <link rel="stylesheet" href="signin.css" />
-    <link rel="stylesheet" href="../headerSection/header.css">
   </head>
   <body>
     <!-- navbar start -->
@@ -72,8 +72,7 @@
     <div id="main-nav">
         <div id="navbar">
             <div>
-              <a href="../index.html"><img id="nav-img" src="https://www.ems.com/assets/76735912.svg" alt=""></a>
-                
+                <a href="../index.html"><img id="nav-img" src="https://www.ems.com/assets/76735912.svg" alt=""></a>
             </div>
             <div class="search" id="search">
                 
@@ -1626,38 +1625,35 @@
     </div>
 
 </div>
-
-    <!-- singin start -->
-    <div id="sign-in">
-      
-      <div id="sign-in-container">
-        <h1>Sign In</h1>
-        <form>
-          <label class="level">Email Address*</label>
-          <input type="email" id="email" required autofocus/>
-          <label class="level">Password*</label>
-          <input type="password" id="password" required />
-          <input type="submit" id="sign-in-btn" value="Log In"/>
-        </form>
-        <p id="check-box-para">
-          <input type="checkbox" id="check-box"/> Keep me signed in.
-          
-        </p>
-        <!-- <p class="newto-ems">Forgot Password?</p> -->
-        <br />
-        <p id="create-ems">New customer? <a href="../SignupPage/signup.html">
-            Create your account
-          </a></p>
+    <!-- signup start -->
+    <div class="sign-in">
         
-        <!-- <button id="create-ems"></button>
-        </button> -->
-      
-        <br />
-        <br />
+      <div id="container">
+        <h1>Create account</h1>
+        <form>
+          <label class="level">Your Name*</label>
+          <input type="text" id="name" required autofocus />
+          <label class="level">Email</label>
+          <input type="email" id="email" required />
+          <label class="level">Password</label>
+          <input
+            type="password"
+            id="password"
+            placeholder="At least 6 characters"
+            required
+          />
+          <p class="rule">Passwords must be at least 6 characters</p>
+          <label class="level">Re-enter password</label>
+          <input type="password" id="re_password" required />
+          <button id="sign">Create Account</button>
+        </form>
+        
+        <div class="create">
+          Already have an account?
+          <a id="sign-in-tag" href="../SigninPage/signin.html">Sign In</a>
+        </div>
       </div>
     </div>
-<br><br>
-<!-- footer start -->
     <div id="foot">
         
       <div id="middel">
@@ -1693,7 +1689,7 @@
           <li><a href="javascript:void(0);">In Store Rentals</a></li>
         </div>
         <div>
-          <h2 >HELP CENTER</h2>
+          <h2>HELP CENTER</h2>
           <li><a href="javascript:void(0);">Customer Service</a></li>
           <li><a href="javascript:void(0);">Reward Help</a></li>
           <li><a href="javascript:void(0);">Shipping</a></li>
@@ -1731,5 +1727,5 @@
       </div>
     </div>
   </body>
-  <script src="signin.js"></script>
+  <script src="signup.js"></script>
 </html>
