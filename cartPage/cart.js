@@ -52,7 +52,11 @@ let Cart = JSON.parse(localStorage.getItem("cart"))||[];
       for(let i=0;i<Cart.length;i++){
         sum+=Cart[i].price*Cart[i].quantity
       }
-   total.textContent=sum
+   total.textContent="₹"+sum
 
     }
     DisplayProduct()
+
+    document.querySelector("#total-product1").textContent= "Cart Summary "+"("+(Cart.length)+" Items)";
+    document.querySelector("#total-product").textContent= (Cart.length)+"  Items in My Cart ";
+    
