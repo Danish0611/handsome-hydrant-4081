@@ -6,9 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cart Page</title>
     <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="../headerSection/header.css">
+    <link rel="stylesheet" href="../footerSection/footer.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      $(function () {
+        $("#header").load("headerSection/header.html");
+        $("#footer").load("footerSection/footer.html");
+      });
+    </script>
 </head>
 <body>
     <!-- Cart Start here -->
+    <div id="header"></div>
     <div class="table-heading">
       <h1 id="total-product">TOTAL PRODUCT</h1>
       </div>
@@ -34,7 +44,7 @@
         </div>
       </div>
       
-      
+      <div id="footer"></div>
 
 </body>
 <script src="cart.js"></script>
