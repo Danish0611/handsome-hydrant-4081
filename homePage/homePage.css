@@ -1,0 +1,64 @@
+#homepage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    align-content: center;
+    text-align: center;
+}
+.img1{
+    display: grid;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    grid-gap: 20px;
+    justify-content: center;
+}
+.img1 a img{
+    
+    
+    height: 420px;
+
+}
+.img2{
+    display: grid;
+    grid-template-columns:30% 30%  ;
+    grid-gap: 20px;
+    justify-content: center;
+}
+.img2 a img{
+    height: 200px;
+}
+h1{
+    text-align: center;
+    margin-top: 20px;
+}
+.img3{
+    display: grid;
+    grid-template-columns:15% 15% 15% 15% ;
+    grid-gap: 10px;
+    justify-content: center;
+}
+.img3 a img{
+    height: 200px;
+}
+.img4{
+    display: grid;
+    grid-template-columns:20% 20% 20% ;
+    grid-gap: 10px;
+    justify-content: center;
+}
+.img4 a img{
+    height: 400px;
+}
+.img5{
+    display: grid;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    grid-gap: 20px;
+    justify-content: center;
+}
+.img5 a img{
+    height: 200px;
+    
+
+}
