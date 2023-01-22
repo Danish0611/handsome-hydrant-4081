@@ -17,4 +17,4 @@ It's a Masai Unit-2 construct week project
 
 
 ### CheckOut Page Screenshot
-![image]https://github.com/Danish0611/handsome-hydrant-4081/blob/main/Assets/checkoutpage.png)
+![image](https://github.com/Danish0611/handsome-hydrant-4081/blob/main/Assets/checkoutpage.png)
