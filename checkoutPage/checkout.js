@@ -45,21 +45,23 @@ document.querySelector("#form-submit").addEventListener("click", function (e) {
       cvv: cvv.value,
       
     };
+    let order=JSON.parse(localStorage.getItem("order"))||[]
     Cart.push(myObj);
-    localStorage.setItem("cart", JSON.stringify(Cart));
+    
+    localStorage.setItem("order", JSON.stringify(order));
     alert(
       username.value +
         "Your  order is received. You will send you the boxses soon!"
     );
 
-    // clearform
-    // document.querySelector("#name").value = "";
-    // document.querySelector("#address").value = "";
-    // document.querySelector("#phone").value = "";
-    // document.querySelector("#nameoncard").value = "";
-    // document.querySelector("#cardnumber").value = "";
-    // document.querySelector("#expirydate").value = "";
-    // document.querySelector("#cvv").value = "";
+//     // clearform
+//     // document.querySelector("#name").value = "";
+//     // document.querySelector("#address").value = "";
+//     // document.querySelector("#phone").value = "";
+//     // document.querySelector("#nameoncard").value = "";
+//     // document.querySelector("#cardnumber").value = "";
+//     // document.querySelector("#expirydate").value = "";
+//     // document.querySelector("#cvv").value = "";
 
    
     window.location.href = "../index.html";
