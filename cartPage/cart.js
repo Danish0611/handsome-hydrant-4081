@@ -59,4 +59,5 @@ let Cart = JSON.parse(localStorage.getItem("cart"))||[];
 
     document.querySelector("#total-product1").textContent= "Cart Summary "+"("+(Cart.length)+" Items)";
     document.querySelector("#total-product").textContent= (Cart.length)+"  Items in My Cart ";
+
     
